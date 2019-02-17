@@ -1,0 +1,63 @@
+---
+---
+<!--
+https://pl.khanacademy.org/computing/computer-programming/html-js-jquery/dom-animation-with-jquery/pt/animating-numeric-properties-with-jquery
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Animated Avatar</title>
+        <style>
+            body {
+                background: black;
+                color: rgb(102, 181, 217);
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            span {
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="avatar">
+        <img src="https://www.khanacademy.org/images/avatars/svg/aqualine-sapling.svg" width="150">
+        <h1>Aqualine</h1>
+    </div>
+    <div>
+        <h2>Khan avatrs</h2>
+        <span>1:</span>
+        <img src="https://cdn.kastatic.org/images/avatars/svg/spunky-sam-orange.svg" alt="" width="75">
+        <span>2:</span>
+        <img src="https://cdn.kastatic.org/images/avatars/svg/robot_male_3.svg" alt="" width="75">
+        <span>3:</span>
+        <img src="https://cdn.kastatic.org/images/avatars/svg/robot_female_3.svg" alt="" width="75">
+        <span>4:</span>
+        <img src="https://cdn.kastatic.org/images/avatars/svg/duskpin-ultimate.svg" alt="" width="75">
+        <span>5:</span>
+        <img src="https://cdn.kastatic.org/images/avatars/svg/leafers-tree.svg" alt="" width="75">
+        <span>6:</span>
+        <img src="https://cdn.kastatic.org/images/avatars/svg/leafers-tree.svg" alt="" width="75">
+        <span>7:</span>
+        <img src="https://cdn.kastatic.org/images/avatars/svg/cs-ohnoes.svg" alt="" width="75">
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+
+    $(".avatar img").animate({
+        width:"300px"
+    },1000);
+
+    $(".avatar h1").animate({
+         fontSize: "100px"
+    },1000);
+
+    </script>
+    </body>
+</html>
